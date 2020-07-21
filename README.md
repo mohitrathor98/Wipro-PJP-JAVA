@@ -1,2 +1,2 @@
 # Wipro-PJP-JAVA
-Assignments of Wipro PJP Course(JAVA Stream)
+All the assignments are divided by topic wise as given in the PJP course.

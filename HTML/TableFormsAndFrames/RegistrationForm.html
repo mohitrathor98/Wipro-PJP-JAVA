@@ -1,0 +1,81 @@
+ <!--
+     Create an online registration form 
+ -->
+
+ <!Doctype HTML>
+ <html>
+     <head>
+         <title>Online Registration Form</title>
+     </head>
+
+     <body>
+        <form>
+            <h2 align="center">Online Registration Form</h2> 
+            <hr>
+             <table cellspacing="5px" cellpadding="5%" align="center">
+                  <tr>
+                      <td align="right">
+                          Username
+                      </td>
+                      <td>
+                          <input type="text" name="username">
+                      </td>
+                  </tr>
+                  <tr>
+                    <td align="right">
+                        Password
+                    </td>
+                    <td>
+                        <input type="password" name="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        Confirm Password
+                    </td>
+                    <td>
+                        <input type="password" name="confpassword">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        Name
+                    </td>
+                    <td>
+                        <input type="text" name="name">
+                    </td>
+                </tr>                
+                <tr>
+                    <td align="right">Address:</td>
+                    <td><textarea row="4" cols="50"></textarea></td>
+                </tr>
+                <tr>
+                    <td align = "right">Gender</td>
+                    <td>
+                        <input type="radio" name="gender" value="male"> Male                    
+                        <input type="radio" name="gender" value="female"> Female
+                    </td>
+                </tr>
+                  <tr>
+                      <td align="right">Profession</td>
+                      <td>
+                          <select name="profession">
+                              <option value="None" selected="selected">Select One</option>
+                              <option value="Engineer">Engineer</option>
+                              <option value="Artist">Artist</option>
+                              <option value="Musizian">Musician</option>
+                          </select>
+                      </td>
+                  </tr>
+                  
+                  <tr>
+                      <td></td>
+                      <td>
+                          <input type="submit" value="submit">
+                          <input type="reset" value="reset">
+                      </td>
+                  <tr>
+             </table>
+          </form>
+     </body>
+ </html>

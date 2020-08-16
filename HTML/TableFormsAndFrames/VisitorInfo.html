@@ -1,0 +1,62 @@
+<!--
+    Create a visitor information capture.
+-->
+
+<!Doctype HTML>
+<html>
+    <head>
+        <title>
+            Visitor Information capture
+        </title>
+    </head>
+    <body>
+        <form>
+          <h2 align="center">Visitors Information</h2> 
+          <hr>
+           <table cellspacing="5px" cellpadding="5%" align="center">
+                <tr>
+                    <td align="right">
+                        E-Mail
+                    </td>
+                    <td>
+                        <input type="email" name="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        Interest:
+                    </td>
+                    <td>
+                        <input type="checkbox" name="interest" value="Research">Research
+                        <input type="checkbox" name="interest" value="Purchase">Purchase
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">Occupation</td>
+                    <td>
+                        <select name="Occupation">
+                            <option value="None" selected="selected">Select One</option>
+                            <option value="Engineer">Engineer</option>
+                            <option value="Artist">Artist</option>
+                            <option value="Musizian">Musician</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align = "right"> Want us to send you junk mails?</td>
+                    <td>
+                        <input type="radio" name="junkmails" value="Absolutely"> Absolutely                    
+                        <input type="radio" name="junkmails" value="No way man">No way man
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="submit">
+                        <input type="reset" value="reset">
+                    </td>
+                <tr>
+           </table>
+        </form>
+    </body>
+</html>

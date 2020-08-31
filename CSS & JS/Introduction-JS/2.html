@@ -1,0 +1,29 @@
+<!--
+    JS program to reverse a number
+-->
+
+<!Doctype HTML>
+<html>
+    <head>
+        <title>
+            JS
+        </title>
+    </head>
+    <body>
+        <form action="#" method="POST" onsubmit="reverse()">
+            <label for="number">Number: </label>
+            <input type="text" id="num" name="number">
+            <input type="submit" value="submit">
+        </form>
+        <script>
+            function reverse(){
+                let num = document.getElementById("num").value;
+                let ans="";
+                for(let i =num.length-1;i>=0;i--){
+                    ans+=num[i];
+                }
+                alert("Reversed Number is: "+ans);
+            }
+            </script>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!--
+    JS program to display the pos of first occurance of "World" in the 
+    variable text.
+-->
+
+<!DOCTYPE html>   
+<html>   
+    <head>  
+        <title>JS</title> 
+    </head>  
+        
+    <body >     
+          
+        <input id = "input" type="text" name="input"/>  
+        <button onclick="findWorld()">  
+            Click To Find World 
+        </button>  
+        <h3 id = "div" style="color: green"> 
+        </h3> 
+            
+        <script>  
+         
+        function findWorld() { 
+            var input = document.getElementById("input"); 
+            var x = document.getElementById("div"); 
+            var string = input.value;
+
+            var res = string.indexOf("World");
+            if(res === -1) {
+                x.innerHTML = "Not Found";
+            } else {
+                x.innerHTML = "Found At "+res;
+            }
+        } 
+        </script>  
+    </body>  
+</html>

@@ -1,0 +1,36 @@
+<!--
+    JS program to capitalize the first letter of each word
+-->
+
+<!DOCTYPE html>   
+<html>   
+    <head>  
+        <title>JS</title> 
+    </head>  
+        
+    <body >     
+          
+        <input id = "input" type="text" name="input"/>  
+        <button onclick="capitalizeFLetter()">  
+            Click to capitalize 
+        </button>  
+        <h3 id = "div" style="color: green"> 
+        </h3> 
+            
+        <script>  
+         
+        function capitalizeFLetter() { 
+            var input = document.getElementById("input"); 
+            var x = document.getElementById("div"); 
+            var string = input.value;
+            var splitArray = string.split(" ");
+            var result = "";
+            for(let i=0;i<splitArray.length;i++){
+                result+= splitArray[i].charAt(0).toUpperCase() + splitArray[i].slice(1) + " ";
+            }
+
+            x.innerHTML = result;
+        } 
+        </script>  
+    </body>  
+</html>

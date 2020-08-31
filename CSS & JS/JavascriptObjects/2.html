@@ -1,0 +1,31 @@
+<!--
+    JS program to convert text to upper case.
+-->
+
+<!DOCTYPE html>   
+<html>   
+    <head>  
+        <title>JS</title> 
+    </head>  
+        
+    <body >     
+          
+        <input id = "input" type="text" name="input"/>  
+        <button onclick="findWorld()">  
+            Click To Capitalize 
+        </button>  
+        <h3 id = "div" style="color: green"> 
+        </h3> 
+            
+        <script>  
+         
+        function findWorld() { 
+            var input = document.getElementById("input"); 
+            var x = document.getElementById("div"); 
+            var string = input.value;
+
+            x.innerHTML = string.toUpperCase();
+        } 
+        </script>  
+    </body>  
+</html>

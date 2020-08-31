@@ -1,0 +1,42 @@
+<!--
+    JS program to remove a specified number of characters from a text
+-->
+
+<!DOCTYPE html>   
+<html>   
+    <head>  
+        <title>JS</title> 
+    </head>  
+        
+    <body >     
+        <table>
+        <td><tr><label>Text: </label>
+        <input id = "text" type="text" name="input1"/> </tr>
+        <tr><label>Number of Chars to be removed: </label>
+        <input id = "remove" type="text" name="input2"/> </tr>
+        <tr><button onclick="removeChars()">  
+            Click To Remove Characters
+        </button></tr></td> </table>  
+        <h3 id = "div" style="color: green"> 
+        </h3> 
+            
+        <script>  
+         
+        function removeChars() { 
+            // For o/p
+            var x = document.getElementById("div"); 
+
+            var input = document.getElementById("text"); 
+            var string = input.value;
+
+            var remove = document.getElementById("remove").value;
+
+            if(string.length<Number(remove)){
+                x.innerHTML = "Number of characters to be removed is less than that of in text"
+            } else {
+                x.innerHTML = string.slice(Number(remove)-1);
+            }
+        } 
+        </script>  
+    </body>  
+</html>

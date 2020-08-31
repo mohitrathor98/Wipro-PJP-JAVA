@@ -1,0 +1,27 @@
+<!--
+    JS program to convert text to upper case when text field is left
+-->
+
+<!DOCTYPE html>   
+<html>   
+    <head>  
+        <title>JS</title> 
+    </head>  
+        
+    <body >     
+        <label>Text: </label>
+        <input id = "text" type="text" onchange="capitalize();"
+        onkeyup="this.onchange();"/> 
+        </h3> 
+            
+        <script>  
+         
+        function capitalize() { 
+            document.querySelector("input").addEventListener("change",function () {
+                var string = document.getElementById("text");
+                string.value = string.value.toUpperCase();
+            });
+        } 
+        </script>  
+    </body>  
+</html>
